@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+    <script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<style type="text/css">
+*{padding:0; margin:0;}
+#DNSHeader {
+	top: 0px;
+	font-size: 30px;
+	width:1920px;
+	height:165px;
+	background-image:url(home%20banner.png);	
+}
+#welcome {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:26px;
+	color: Black;
+	text-align:center;
+	left:350px;
+}
+nav a {
+	text-decoration:none;
+	color: #333;
+}
+nav li {
+	list-style-type:none;
+}
+nav {
+	font-size:24px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	width:100%;
+}
+nav ul {
+	left:0px;
+}
+
+nav a {
+	left:0;
+	display:block;
+	padding: 20px 0;
+}
+nav a:hover{
+	color:#FFF;
+	background-color:#666;
+}
+.menu {
+	width: 239px;
+	height: 100%;
+	background-color: #CCC;
+	position:absolute;
+	top:0;
+	left:-240px;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+}
+
+.menu-icon {
+	position: fixed;
+	top:167px;
+	padding: 10px 20px;
+	background: #000;
+	opacity:0.5;
+	font-size: 40px;
+	color: #FFF;	
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+}
+
+#menuToggle:checked ~ .menu {
+	position:fixed;
+	left:0px;
+}
+
+#menuToggle:checked ~ .menu-icon{
+	position:absolute;
+	left:239px;
+}
+#menuToggle {
+	display:none;
+}
+.content {
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+}
+	
+
+
+
+#computerFrame {
+	position:absolute;
+	left: 100px;
+	top:175px;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+}
+
+
+
+#screen {
+	position: absolute;
+	top: 216px;
+	height: 538px;
+	left: 143px;
+	width: 1119px;
+	overflow: scroll;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	}
+	
+#menuToggle:checked ~ .simulatorDiv {
+	position: relative;
+	left: 245px;
+	background-color: #F00;
+}
+
+#menuToggle:checked ~ .content {
+	position:absolute;
+	left:245px;
+}
+#homeBtn {
+	position:relative;
+	bottom:1799px;
+	width:52px;
+	height:39px;
+	left:100px;
+	display:block;
+	z-index:5;
+}
+
+#moveMoney {
+	position:relative;
+	bottom:1838px;
+	width:121px;
+	height:39px;
+	left:154px;
+	display:block;
+	z-index:6;
+}
+#manageAccounts {
+	position:relative;
+	bottom:1877px;
+	width:134px;
+	height:39px;
+	left:275px;
+	display:block;
+	z-index:7;
+}
+#borrow {
+	position:relative;
+	bottom:1916px;
+	width:110px;
+	height:39px;
+	left:410px;
+	display:block;
+	z-index:7;
+}
+#save {
+	position:relative;
+	bottom:1955px;
+	width:110px;
+	height:39px;
+	left:520px;
+	display:block;
+	z-index:7;
+}
+#invest {
+	position:relative;
+	bottom:1994px;
+	width:110px;
+	height:39px;
+	left:630px;
+	display:block;
+	z-index:7;
+}
+#insure {
+	position:relative;
+	bottom:2033px;
+	width:109px;
+	height:39px;
+	left:739px;
+	display:block;
+	z-index:7;
+}
+#rewards {
+	position:relative;
+	bottom:2072px;
+	width:147px;
+	height:39px;
+	left:849px;
+	display:block;
+	z-index:7;
+}
+#yourProfile {
+	position:relative;
+	bottom:2154px;
+	width:206px;
+	height:14px;
+	left:792px;
+	display:block;
+	z-index:7;
+}
+#logout {
+	position:relative;
+	bottom:2207px;
+	width:58px;
+	height:19px;
+	left:928px;
+	display:block;
+	z-index:7;
+}
+#messages {
+	position:relative;
+	bottom:2226px;
+	width:65px;
+	height:50px;
+	left:570px;
+	display:block;
+	z-index:7;
+}
+#notifications {
+	position:relative;
+	bottom:2277px;
+	width:70px;
+	height: 50px;
+	left: 675px;
+	display:block;
+	z-index:7;
+}
+#mobileSite {
+	position:relative;
+	bottom:2387px;
+	width:65px;
+	height: 20px;
+	left: 395px;
+	display:block;
+	z-index:7;
+}
+
+#accountName {
+	position:relative;
+	bottom:2093px;
+	width:220px;
+	height: 20px;
+	left: 117px;
+	display:block;
+	z-index:7;
+}
+#accountServices {
+	position:relative;
+	bottom:2109px;
+	width:130px;
+	height: 21px;
+	left: 394px;
+	display:block;
+	z-index:7;
+}
+
+#showTransactions {
+	position:relative;
+	bottom:2029px;
+	width:275px;
+	height: 27px;
+	left: 116px;
+	display:block;
+	z-index:7;
+}
+#makePayment {
+	position:relative;
+	bottom: 2130px;
+	width: 100px;
+	height: 14px;
+	left: 398px;
+	display:block;
+	z-index:7;
+}
+	
+
+
+#homeBtn:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+
+	#moveMoney:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+
+#manageAccounts:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#borrow:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#save:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#invest:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#insure:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#rewards:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#yourProfile:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#logout:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#messages:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#notifications:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#mobileSite:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#accountName:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#accountServices:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#showTransactions:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+makePayment:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;	
+}
+#makePayment:hover {
+	background-color:#999;
+	opacity:0.35;
+	cursor:pointer;
+}
+#picture:hover {
+	cursor:pointer
+}
+#picture {
+	height:100%;
+	width:100%;
+	object-fit:contain;
+}
+</style>
+</head>
+
+<body background="home background.jpg">
+<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
+<header class="content">
+<div id="DNSHeader">
+  <div align="center" id="DNSHeader">
+    <p>&nbsp;</p>
+    <p></p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+</header>
+
+<nav class="menu">
+	<ul>
+    	<li> <a href="DNS home.html">Home</a></li>
+        <li> <a href="olb menu.html">Online Banking</a></li>
+        <li> <a href="bmb menu.html">Barclays Mobile Banking</a></li>
+        <li> <a href="pingit menu.html">Pingit</a></li>
+    </ul>
+</nav>
+<p>&nbsp;</p>
+<div class="simulatorDiv">
+<div id="computerFrame">
+	  
+    <img src="computer frame.png" width="1200" height="848">
+    </div>
+<div id="screen">
+	<div id="homeMain">
+	<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides" onclick="plusSlides(1)">
+    <img id="picture" src="olb/login_1.jpg" >
+  </div>
+
+  <div class="mySlides" onclick="plusSlides(1)">
+    <img id="picture" src="olb/login_2_mobilepinsentry.jpg">
+  </div>
+
+  <div class="mySlides" onclick="plusSlides(1)">
+    <img id="picture" src="olb demo/login_3.jpg">
+  </div>
+  
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
